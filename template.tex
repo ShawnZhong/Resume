@@ -1,0 +1,246 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{} % Profile picture
+
+\cvname{Shawn Zhong} % Your name
+\cvjobtitle{Full Stack DevOps} % Job title/career
+\cvdate{May 19, 1998} % Date of birth
+\cvaddress{} % Short address/location, use \newline if more than 1 line is required
+\cvlinkedin{linkedin.com/in/shawnzhong}
+\cvgithub{github.com/ShawnZhong}
+\cvnumberphone{(608) 698-6360} % Phone number
+\cvsite{shawnzhong.com} % Personal website
+\cvmail{job@shawnzhong.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+
+\aboutme{}
+
+\education{
+    University of Wisconsin-Madison \newline
+    2017 - Now | CS \& Math | GPA 4.0 \newline 
+    Dean's List; ACM-ICPC Team Staff \newline \newline
+    CS courses: Big Data, AI, ML, DB, OS, Network, Security, Algorithm, Compiler, Bioinformatics
+    \newline \newline
+    Note-taker for Numerical Analysis, Abstract Algebra, Mathematical Analysis, Probability, Linear Algebra, Stochastic Process, Discrete Math
+}
+
+\awards{
+2017 ACM-ICPC \#22 out of 208 teams in North Central North American Region (Team name: \href{https://ncna17.kattis.com/standings?filter=1058}{\underline{Rocky}}) \newline\newline
+2018 ACM-ICPC \#9 out of 209 teams in North Central North American Region (Team name: \href{https://ncna18.kattis.com/standings}{\underline{int main()}})
+}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{
+    {PyTorch, TensorFlow\slash Keras, NumPy/5.2},
+    {SQL Database (Postgres \& MySQL)/5.0},
+    {Node.js, Express.js/5.4},
+    {JavaScript (ES6+), React, Redux/5.7},
+    {HTML, CSS, Bootstrap/5.8},
+    {C\slash C++/5.2},
+    {Python/5.6},
+    {Java/5.5}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{Other: Docker, Spark, Hadoop, GCP, AWS, \LaTeX, MATLAB, Mathematica}
+
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 INTERESTS
+%----------------------------------------------------------------------------------------
+
+% \section{Interests}
+
+% The heroine and the dreamer of Wonderland; Alice is the principal character.
+
+
+
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+
+% \section{Publications}
+
+% \begin{twentyshort} % Environment for a short list with no descriptions
+% 	\twentyitemshort{1865}{Chapter One, Down the Rabbit Hole.}
+% 	\twentyitemshort{1865}{Chapter Two, The Pool of Tears.}
+% 	\twentyitemshort{1865}{Chapter Three,  The Caucus Race and a Long Tale.}
+% 	\twentyitemshort{1865}{Chapter Four,  The Rabbit Sends a Little Bill.}
+% 	\twentyitemshort{1865}{Chapter Five,  Advice from a Caterpillar.}
+% 	%\twentyitemshort{<dates>}{<title/description>}
+% \end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+
+% \section{Awards}
+
+% \begin{twentyshort} % Environment for a short list with no descriptions
+% 	\twentyitemshort{1987}{All-Time Best Fantasy Novel.}
+% 	\twentyitemshort{1998}{All-Time Best Fantasy Novel before 1990.}
+% 	%\twentyitemshort{<dates>}{<title/description>}
+% \end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience and Internships}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem{Summer'19}{Intern at an AI-Based Conversational Analytics Company}
+    {\href{https://datachat.ai/}{\underline{{DataChat}}}}
+    {
+    - Refactored the back-end visualization module by chart types \newline
+    - Simplified queries when gathering statistics about a table\newline
+    - Developed recommendation engine to predict the next utterance\newline
+    - Implemented link in conversation to execute suggested utterance \newline
+    - Allowed users to generate PDF magazine for current session\newline
+    - Added state-full hot reload to the front end using Webpack HMR \newline
+    - 100+ PR with 21,179 lines of addition and 16,183 lines of deletion \newline
+    }
+	
+	\twentyitem{Summer'18}{Full Stack Developer at a Student Startup}{Buddy Career (Closed)}
+	{
+	- Developed a mentor-mentee pairing web app with React \& Node\newline
+	- Implemented user profile page, comment box, and password reset \newline
+	- Added search, filter, and pagination to mentor list \newline
+	- Integrate Redux to the front-end for state management \newline
+	- Refactored  back-end to use async/await \& centralize error handling \newline
+	- \textasciitilde{}40,000 lines of code added, and \textasciitilde{}250 commits on GitHub
+	}
+\end{twenty}
+
+
+\section{Projects}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem{May-Jun'19}{JsSpim: An Online MIPS32 Simulator}
+    {\href{https://shawnzhong.github.io/JsSpim/}{\underline{Website}} | \href{https://github.com/ShawnZhong/JsSpim}{\underline{GitHub}}}
+    {
+     - A simulator that supports the entire MIPS32 instruction set \newline
+     - Support breakpoints, custom execution speed, ASCII memory view, highlight on changed registers/memory, change radix display, etc. \newline
+     - Use WebAssembly for the simulator logic for optimal performance \newline
+     - Use vanilla JavaScript for other logic, and Bootstrap for layout \newline
+     - Use background Web Worker for assembly syntax highlighting \newline
+    }
+    
+	\twentyitem{May-Jun'19}{xv6 File System Visualizer} {\href{https://shawnzhong.github.io/xv6-file-system-visualizer/}{\underline{Website}} | \href{https://github.com/ShawnZhong/xv6-file-system-visualizer}{\underline{GitHub}}}
+	{
+	    - Developed an online visualizer for xv6 file system image \newline
+	    - Allow users to view all files, inodes \& blocks, and trace their relation \newline
+	    - Built with vanilla JavaScript (using the new \textit{ArrayBuffer} API in ES6) \newline
+	    - Implemented basic support for file system consistency check \newline
+	}
+	
+	\twentyitem{Dec'18}{MadCourse: UW-Madison Course Monitor} {\href{https://chrome.google.com/webstore/detail/madcourse/cijpakgnnndjbilnioofmgdededkdmpc}{\underline{Chrome Web Store}} | \href{https://github.com/ShawnZhong/MadCourse}{\underline{GitHub}}}
+	{
+	    - A Chrome extension to check course status for UW-Madison \newline
+	    - Send a notification when there is a change in section status \newline
+	    - Integrated with RateMyProfessor and MadGrades \newline
+	}
+	
+	\twentyitem{Nov'18}{Badger Map} {\href{https://devpost.com/software/badger-map-k256i9}{\underline{Devpost}} | \href{https://github.com/ShawnZhong/Badger-Map}{\underline{GitHub}}}
+	{
+	    - An iOS app that helps students navigate in the campus using AR \newline
+	    - Built in only 2 days during MadHacks 2018 \newline
+	    - Use augmented reality to show the position of campus buildings \newline
+	    - Provide road navigation to certain building via map view
+	}
+\end{twenty}
+
+\section{Extra-Curricular}
+
+\begin{twenty} % Environment for a list with descriptions
+    \twentyitem{Fall'19}{Peer Mentor for the Operations System Class}
+    {
+      \href{https://shawnzhong.com/#tutorials}{\underline{Tutorials}}
+    }
+    {
+     - Write tutorials on IDE settings, sanitizer, profiler, etc. \newline
+     - Answer questions on Piazza (a Q\&A forum) \newline
+     - Hold lab hours to help students with assignments \newline
+     }
+    
+    \twentyitem{Spring'18}{Technical Team Leader at Badger Mentorship}
+    {\href{http://badgermentorship.com}{\underline{Website}}}
+    {
+     - Developed a website for the student organization \newline
+     - Originally hosted on AWS. Migrated to GCP inside Docker container\newline
+     - Deployed a mail server for newsletters and announcements\newline
+    }
+    
+    \twentyitem{Oct'18}{Grader at AoCMM}
+    {\href{http://badgermentorship.com}{\underline{Website}}}
+    {
+     - Reviewed and graded 2018 AoCMM Math Modeling Competition \newline
+    }
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{Other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
